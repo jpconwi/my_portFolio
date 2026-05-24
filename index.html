@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Patrick T. Conwi | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #111827;
+      padding: 15px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #38bdf8;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to right, #0f172a, #1e3a8a);
+      color: white;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content h2 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+
+    .hero-content p {
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #38bdf8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: white;
+      color: #1e3a8a;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #1e3a8a;
+      font-size: 35px;
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 230px;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      color: #1e3a8a;
+      margin-bottom: 15px;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .skill {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .project-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #1e3a8a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .project-btn:hover {
+      background: #38bdf8;
+    }
+
+    a {
+      color: #1e3a8a;
+    }
+
+    .contact a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero-content h1 {
+        font-size: 38px;
+      }
+
+      .hero-content h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo">JP Conwi</div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>John Patrick T. Conwi</h1>
+      <h2>Web Developer | System Developer | Graphic Designer</h2>
+
+      <p>
+        Hi! I am John Patrick T. Conwi, a 20-year-old BS Computer Science
+        student at North Eastern Mindanao State University. I specialize in
+        developing responsive web applications, scalable systems, and modern
+        graphic designs for digital platforms. I am passionate about creating
+        efficient, user-friendly, and visually appealing solutions that help
+        businesses and individuals improve their online presence.
+      </p>
+
+      <a href="#projects" class="btn">View My Projects</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-content">
+      <p>
+        I am passionate about technology, software development, and creative
+        design. I enjoy building modern web applications, developing reliable
+        management systems, and creating clean user interfaces and graphics.
+        My goal is to provide clients with efficient, professional, and
+        high-quality digital solutions using modern technologies and best
+        development practices.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Professional Services</h2>
+
+    <div class="cards" style="align-items: stretch;">
+
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>
+          Responsive and professional websites using modern web technologies.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>System Development</h3>
+        <p>
+          Development of management systems and functional software solutions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>
+          Creative graphics, UI designs, banners, and social media content.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Vue.js</div>
+      <div class="skill">Laravel</div>
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">C++</div>
+      <div class="skill">System Development</div>
+      <div class="skill">Web Application Development</div>
+      <div class="skill">Graphic Design</div>
+      <div class="skill">Responsive Web Design</div>
+      <div class="skill">UI/UX Design</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Vercel Deployment</div>
+      <div class="skill">Render Deployment</div>
+      <div class="skill">Hostinger Hosting</div>
+      <div class="skill">Turso Database</div>
+      <div class="skill">Supabase</div>
+      <div class="skill">SQLite</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Arduino Development</div>
+      <div class="skill">ESP32 Programming</div>
+      <div class="skill">Raspberry Pi</div>
+      <div class="skill">Orange Pi</div>
+      <div class="skill">IoT Development</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+
+    <p style="text-align:center; max-width:800px; margin:auto; margin-bottom:40px;">
+      Here are some of the projects I developed involving web applications,
+      system development, and modern responsive user interfaces.
+    </p>
+    <h2>Technical Skills</h2>
+
+    <div class="cards" style="align-items: stretch;">
+
+      <div class="card">
+        <h3>NEMSU Marketplace</h3>
+
+        <p>
+          A marketplace web application designed for students and users.
+        </p>
+
+        <a href="https://nemsu-market-place.vercel.app/" target="_blank" class="project-btn">
+          View Project
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Potato Corner Web App</h3>
+
+        <p>
+          A modern food ordering web application with responsive design.
+        </p>
+
+        <a href="https://potato-corner-psi.vercel.app/" target="_blank" class="project-btn">
+          View Project
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>GitHub Repository Collection</h3>
+
+        <p>
+          Collection of my web development and system development projects.
+        </p>
+
+        <a href="https://github.com/jpconwi?tab=repositories" target="_blank" class="project-btn">
+          Visit GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Information</h2>
+
+    <div class="contact">
+      <p><strong>Name:</strong> John Patrick T. Conwi</p>
+      <p><strong>Age:</strong> 20 Years Old</p>
+      <p><strong>Course:</strong> BS Computer Science</p>
+      <p><strong>School:</strong> North Eastern Mindanao State University</p>
+      <p><strong>GitHub:</strong> github.com/jpconwi</p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61584891714990" target="_blank">facebook.com/profile.php?id=61584891714990</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jp-conwi-6a5524372/" target="_blank">linkedin.com/in/jp-conwi-6a5524372</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 John Patrick T. Conwi. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+
